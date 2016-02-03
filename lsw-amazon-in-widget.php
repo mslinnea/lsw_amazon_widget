@@ -108,6 +108,7 @@ class LSW_Amazon_Widget extends WP_Widget {
 			$tag = isset( $instance['tag'] ) ? $instance['tag'] : '';
 			echo $args['before_widget'];
 			?>
+			&#x3C;h2&#x3E;You Might Be Interested In...&#x3C;/h2&#x3E;
 			<a href="<?php echo $this->getAmazonUrl( $lsw_amazon['asin'], $tag ); ?>">
 				<?php echo sanitize_text_field( $lsw_amazon['title'] ); ?>
 			</a>
